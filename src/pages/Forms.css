@@ -1,0 +1,1043 @@
+/* ===== ENHANCED FORMS STYLES ===== */
+.form-page {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #E0F7FA 0%, #F8FDFE 50%, #E0F7FA 100%);
+  position: relative;
+}
+
+.form-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  background: var(--gradient-ocean);
+  z-index: 0;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(10, 90, 107, 0.2);
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.form-container-small {
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(10, 90, 107, 0.2);
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+/* Form Header - Enhanced */
+.form-header {
+  background: var(--gradient-ocean);
+  padding: 3.5rem 3rem 3rem;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.form-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-5px);
+}
+
+.form-header h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+.form-header p {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Form Body */
+.volunteer-form,
+.newsletter-signup-form {
+  padding: 3.5rem 3rem;
+}
+
+.form-section {
+  margin-bottom: 3.5rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid #E0F7FA;
+  position: relative;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+/* Section Titles - Enhanced */
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--ocean-deep);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--gradient-ocean);
+  border-radius: 3px;
+}
+
+/* Form Groups - Enhanced */
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 2px solid #E0F7FA;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+  background: #F8FDFE;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: var(--sea-foam);
+  background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--ocean-deep);
+  box-shadow: 0 0 0 4px rgba(10, 90, 107, 0.1);
+  background: var(--white);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%230A5A6B' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1.25rem center;
+  background-size: 12px;
+  padding-right: 3rem;
+}
+
+/* Checkbox Grid - Enhanced */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1rem 1.25rem;
+  background: #F8FDFE;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #E0F7FA;
+  position: relative;
+  overflow: hidden;
+}
+
+.checkbox-label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(78, 205, 196, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.checkbox-label:hover {
+  background: var(--white);
+  border-color: var(--sea-foam);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 90, 107, 0.1);
+}
+
+.checkbox-label:hover::before {
+  left: 100%;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: var(--ocean-deep);
+  flex-shrink: 0;
+}
+
+.checkbox-label span {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.checkbox-label:has(input:checked) {
+  background: linear-gradient(135deg, rgba(10, 90, 107, 0.08) 0%, rgba(78, 205, 196, 0.08) 100%);
+  border-color: var(--ocean-deep);
+}
+
+/* Form Actions - Enhanced */
+.form-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 2px solid #E0F7FA;
+}
+
+.btn-primary-form,
+.btn-secondary-form {
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary-form::before,
+.btn-secondary-form::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary-form:hover::before,
+.btn-secondary-form:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-primary-form {
+  background: var(--gradient-ocean);
+  color: var(--white);
+  box-shadow: 0 8px 24px rgba(10, 90, 107, 0.25);
+}
+
+.btn-primary-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(10, 90, 107, 0.35);
+}
+
+.btn-secondary-form {
+  background: var(--white);
+  color: var(--ocean-deep);
+  border: 2px solid var(--ocean-deep);
+}
+
+.btn-secondary-form:hover {
+  background: var(--ocean-deep);
+  color: var(--white);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(10, 90, 107, 0.2);
+}
+
+.btn-primary-form.full-width {
+  width: 100%;
+}
+
+/* Success Message - Enhanced */
+.success-message-card {
+  text-align: center;
+  padding: 5rem 3rem;
+  animation: fadeInScale 0.6s ease-out;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.success-icon {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, #27AE60 0%, #2ECC71 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: var(--white);
+  margin: 0 auto 2.5rem;
+  animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s both;
+  box-shadow: 0 12px 40px rgba(39, 174, 96, 0.3);
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.success-message-card h2 {
+  font-size: 2.5rem;
+  color: var(--ocean-deep);
+  margin-bottom: 1.25rem;
+  font-weight: 800;
+}
+
+.success-message-card p {
+  font-size: 1.25rem;
+  color: var(--text-medium);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.success-message-card .btn-primary {
+  margin-top: 2.5rem;
+  padding: 1.25rem 3rem;
+  background: var(--gradient-ocean);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(10, 90, 107, 0.25);
+}
+
+.success-message-card .btn-primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(10, 90, 107, 0.35);
+}
+
+/* Form Disclaimer */
+.form-disclaimer {
+  text-align: center;
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  margin-top: 2rem;
+  font-style: italic;
+  padding: 1.5rem;
+  background: #F8FDFE;
+  border-radius: 10px;
+  border: 1px solid #E0F7FA;
+}
+
+/* Progress Indicator */
+.form-progress {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.progress-step {
+  width: 60px;
+  height: 4px;
+  background: #E0F7FA;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.progress-step.active {
+  background: var(--gradient-ocean);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-page {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .form-page::before {
+    height: 200px;
+  }
+
+  .form-container,
+  .form-container-small {
+    border-radius: 20px;
+  }
+
+  .form-header {
+    padding: 2.5rem 2rem 2rem;
+  }
+
+  .form-header h1 {
+    font-size: 2rem;
+  }
+
+  .form-header p {
+    font-size: 1.0625rem;
+  }
+
+  .volunteer-form,
+  .newsletter-signup-form {
+    padding: 2.5rem 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .btn-primary-form,
+  .btn-secondary-form {
+    width: 100%;
+  }
+
+  .success-message-card {
+    padding: 3rem 2rem;
+  }
+
+  .success-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+
+  .success-message-card h2 {
+    font-size: 2rem;
+  }
+
+  .success-message-card p {
+    font-size: 1.0625rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-header {
+    padding: 2rem 1.5rem;
+  }
+
+  .volunteer-form,
+  .newsletter-signup-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}/* Add to your existing Forms.css */
+/* ===== DONATION FORM FIXES ===== */
+
+/* Fix donation page layout */
+.donation-page {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  background: linear-gradient(135deg, #0A5A6B 0%, #2E8B8B 50%, #4ECDC4 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(78, 205, 196, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+  z-index: 0;
+  animation: floatAnimation 8s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.donation-form-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--white);
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(10, 90, 107, 0.3);
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+/* Enhanced Header */
+.donation-header {
+  background: linear-gradient(135deg, rgba(10, 90, 107, 0.95) 0%, rgba(46, 139, 139, 0.95) 100%);
+  padding: 3rem 3rem 2.5rem;
+  color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.donation-header .back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
+}
+
+.donation-header .back-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(-5px);
+}
+
+.donation-header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.donation-header p {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Enhanced Progress Steps */
+.donation-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 3rem 2.5rem;
+  background: var(--white);
+  position: relative;
+  border-bottom: 2px solid #E0F7FA;
+}
+
+.donation-progress .progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 10;
+}
+
+.donation-progress .step-number {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #E0F7FA 0%, #F0F9FF 100%);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border: 3px solid transparent;
+  box-shadow: 0 4px 15px rgba(10, 90, 107, 0.1);
+}
+
+.donation-progress .progress-step.active .step-number {
+  background: var(--gradient-ocean);
+  color: var(--white);
+  border-color: var(--white);
+  box-shadow: 0 8px 25px rgba(10, 90, 107, 0.35);
+  transform: scale(1.15);
+}
+
+.donation-progress .step-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.donation-progress .progress-step.active .step-label {
+  color: var(--ocean-deep);
+}
+
+.donation-progress .progress-line {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #E0F7FA 0%, #F0F9FF 100%);
+  margin: 0 1.5rem;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-progress .progress-line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-ocean);
+  transition: left 0.5s ease;
+}
+
+.donation-progress .progress-line.active::before {
+  left: 0;
+}
+
+/* Donation Form Body */
+.donation-form {
+  padding: 3.5rem 3rem;
+  background: var(--white);
+}
+
+.form-step {
+  min-height: 400px;
+}
+
+/* Donation Type Selector */
+.donation-type-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.type-option {
+  flex: 1;
+  padding: 1.25rem;
+  border: 3px solid #E0F7FA;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #F8FDFE;
+}
+
+.type-option input {
+  display: none;
+}
+
+.type-option span {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: var(--text-dark);
+}
+
+.type-option.selected {
+  border-color: var(--ocean-deep);
+  background: linear-gradient(135deg, rgba(10, 90, 107, 0.08) 0%, rgba(78, 205, 196, 0.08) 100%);
+}
+
+.type-option:hover {
+  border-color: var(--sea-foam);
+  transform: translateY(-2px);
+}
+
+/* Amount Grid */
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.amount-option {
+  padding: 2.5rem 1.5rem;
+  border: 3px solid #E0F7FA;
+  border-radius: 18px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(135deg, #F8FDFE 0%, #FFFFFF 100%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(10, 90, 107, 0.08);
+}
+
+.amount-option input {
+  display: none;
+}
+
+.amount-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(78, 205, 196, 0.15), transparent);
+  transition: left 0.6s ease;
+}
+
+.amount-option:hover {
+  border-color: var(--sea-foam);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(10, 90, 107, 0.15);
+}
+
+.amount-option:hover::before {
+  left: 100%;
+}
+
+.amount-value {
+  font-size: 3rem;
+  font-weight: 800;
+  background: var(--gradient-ocean);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.amount-impact {
+  font-size: 0.9375rem;
+  color: var(--text-medium);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.amount-option.selected {
+  border-color: var(--ocean-deep);
+  background: linear-gradient(135deg, rgba(10, 90, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 100%);
+  box-shadow: 0 12px 40px rgba(10, 90, 107, 0.25);
+  transform: scale(1.05);
+}
+
+/* Custom Amount */
+.custom-amount {
+  margin-top: 2rem;
+}
+
+.amount-input-wrapper {
+  position: relative;
+}
+
+.currency-symbol {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ocean-deep);
+  z-index: 2;
+}
+
+.amount-input-wrapper input {
+  padding-left: 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Payment Summary */
+.payment-summary {
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(10, 90, 107, 0.08) 0%, rgba(78, 205, 196, 0.08) 100%);
+  border-radius: 16px;
+  margin-bottom: 2.5rem;
+  border: 2px solid var(--sea-foam);
+  position: relative;
+  overflow: hidden;
+}
+
+.payment-summary::before {
+  content: '💚';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 8rem;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.125rem;
+  position: relative;
+  z-index: 1;
+}
+
+.summary-row:not(:last-child) {
+  border-bottom: 2px solid rgba(10, 90, 107, 0.1);
+}
+
+.summary-row span {
+  font-weight: 600;
+  color: var(--text-medium);
+}
+
+.summary-row strong {
+  color: var(--ocean-deep);
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+/* Card Input */
+.card-input-wrapper {
+  position: relative;
+}
+
+.card-input-wrapper input {
+  padding-right: 4rem;
+}
+
+.card-icons {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.75rem;
+  pointer-events: none;
+}
+
+/* Security Notice */
+.security-notice {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(39, 174, 96, 0.1) 0%, rgba(46, 204, 113, 0.1) 100%);
+  border-radius: 14px;
+  border: 2px solid rgba(39, 174, 96, 0.3);
+  margin: 2.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.security-icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 2px 8px rgba(39, 174, 96, 0.3));
+}
+
+.security-notice p {
+  margin: 0;
+  font-weight: 700;
+  color: #27AE60;
+  font-size: 1.0625rem;
+}
+
+/* Checkbox Label Inline */
+.checkbox-label-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox-label-inline input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--ocean-deep);
+}
+
+.checkbox-label-inline span {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+/* Animation for form steps */
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .donation-page {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .donation-header {
+    padding: 2.5rem 2rem 2rem;
+  }
+
+  .donation-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .donation-form {
+    padding: 2.5rem 2rem;
+  }
+
+  .donation-progress {
+    padding: 2rem 1.5rem;
+  }
+
+  .donation-progress .progress-line {
+    width: 60px;
+    margin: 0 0.5rem;
+  }
+
+  .donation-progress .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .amount-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donation-type-selector {
+    flex-direction: column;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .btn-primary-form,
+  .btn-secondary-form {
+    width: 100%;
+  }
+}

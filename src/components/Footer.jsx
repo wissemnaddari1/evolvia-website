@@ -165,7 +165,7 @@ function Footer() {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📞</span>
-                <a href="tel:+21622345678">+216 22 345 678</a>
+                <a href="tel:+21622345678">+216 20 129 425</a>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
